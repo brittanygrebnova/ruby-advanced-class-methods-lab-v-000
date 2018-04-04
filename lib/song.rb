@@ -45,14 +45,14 @@ class Song
   
   def self.new_from_filename(song)
     separated = song.split(/[-.]/)
-      separated.pop
-      artist_name = separated[0].strip
-      name = separated[1].strip
-      song = self.new
-      song.artist_name = artist_name
-      song.name = name
-      end
-    song
+    separated.pop
+    artist_name = separated[0].strip
+    name = separated[1].strip
+    song = self.new
+    song.artist_name = artist_name
+    song.name = name
+    end
+  song
   end
 
 end
