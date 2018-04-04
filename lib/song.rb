@@ -50,7 +50,6 @@ class Song
       artist_name = separated[0].strip
       name = separated[1].strip
       song = self.new
-      binding.pry
       song.artist_name = artist_name
       song.name = name
       end
