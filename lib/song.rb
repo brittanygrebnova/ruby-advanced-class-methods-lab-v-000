@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -45,8 +47,9 @@ class Song
     separated = song.split(/[-.]/)
     separated.each do |part|
       separated.pop
-      artist_name = separated[1]
-      name = separated[0]
+      artist_name = separated[0]
+      name = separated[1]
+      binding.pry
       song = self.new
       song.artist_name = artist_name
       song.name = name
