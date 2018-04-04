@@ -49,8 +49,8 @@ class Song
       separated.pop
       artist_name = separated[0].strip
       name = separated[1].strip
-      binding.pry
       song = self.new
+      binding.pry
       song.artist_name = artist_name
       song.name = name
       end
