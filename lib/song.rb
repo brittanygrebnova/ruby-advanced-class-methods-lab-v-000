@@ -48,9 +48,9 @@ class Song
       artist_name = separated[0]
       name = separated[1]
       song = self.new
-      song.name = name
       song.artist_name = artist_name
-    end
+      song.name = name
+      end
     song
   end
 
