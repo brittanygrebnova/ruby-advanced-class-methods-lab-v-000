@@ -47,7 +47,7 @@ class Song
       separated.pop
       name = separated[0]
       artist_name = separated[1]
-      song = self.new
+      new_song = self.new
       song.name = name
       song.artist_name = artist_name
     end
