@@ -45,8 +45,8 @@ class Song
     separated = song.split(/[-.]/)
     separated.each do |part|
       separated.pop
-      name = separated[0]
-      artist_name = separated[1]
+      artist_name = separated[0]
+      name = separated[1]
       song = self.new
       song.name = name
       song.artist_name = artist_name
