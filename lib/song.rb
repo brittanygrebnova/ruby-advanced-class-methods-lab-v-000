@@ -51,8 +51,8 @@ class Song
       name = separated[1]
       binding.pry
       song = self.new
-      self.artist_name = artist_name
-      self.name = name
+      song.artist_name = artist_name
+      song.name = name
       end
     song
   end
