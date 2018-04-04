@@ -54,7 +54,7 @@ class Song
     song
   end
   
-  def self.create_from_filename
+  def self.create_from_filename(song)
     separated = song.split(/[-.]/)
     separated.pop
     artist_name = separated[0].strip
