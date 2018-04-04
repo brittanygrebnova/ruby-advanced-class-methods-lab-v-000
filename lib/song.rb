@@ -53,6 +53,18 @@ class Song
     song.name = name
     song
   end
+  
+  def self.create_from_filename
+    separated = song.split(/[-.]/)
+    separated.pop
+    artist_name = separated[0].strip
+    name = separated[1].strip
+    song = self.new
+    song.artist_name = artist_name
+    song.name = name
+    song
+    @@all << song
+  end
 
 end
 
