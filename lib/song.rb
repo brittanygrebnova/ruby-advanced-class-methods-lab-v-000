@@ -45,7 +45,6 @@ class Song
   
   def self.new_from_filename(song)
     separated = song.split(/[-.]/)
-    separated.each do |part|
       separated.pop
       artist_name = separated[0].strip
       name = separated[1].strip
